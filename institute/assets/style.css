@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgba(255, 255, 240, 1);
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(220, 220, 200, 1);
+}
+
+h1 {
+    font-size: 20px;
+}
