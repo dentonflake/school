@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Institute</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/style.css">
@@ -16,19 +16,90 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body onload="handleGenerateQuote();">
     <header>
-        <h1>Denton Flake</h1>
+        <h1>Elevated Learning</h1>
+        <a target="_blank" href="https://www.amazon.com/Divine-Gift-Forgiveness-Neil-Andersen/dp/1629727415"
+            class="button" id="button-order">ORDER NOW →</a>
     </header>
 
     <main>
-        <section id="hero">
-            <h2>The Divine Gift of Forgiveness</h2>
-            <h3>By: Neil L. Andersen</h3>
-        </section>
+        <div class="grid" id="main">
+            <section id="hero" class="grid grid-item">
+                <h2 id="h2-title">The Divine Gift of Forgiveness</h2>
+                <h3 id="h3-subTitle">Neil L. Andersen</h3>
+                <img id="img-heroImage" src="./assets/images/book.jpeg" alt="">
+            </section>
+
+            <section class="grid-item" id="description">
+                <img id="img-andersen" src="./assets/images/andersen.webp" alt="">
+                <p id="p-description">“Honesty, integrity, and truth are eternal principles that significantly shape our
+                    experience in mortality and help
+                    determine our eternal destiny.” <br><br>
+                    ― Neil L. Andersen</p>
+            </section>
+
+            <section class="grid grid-item" id="quote-generator">
+                <p id="p-quote"></p>
+                <p id="p-author"></p>
+                <div id="button-generate" class="button" onclick="handleGenerateQuote()">GET A QUOTE</div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- 
+
+        <section class="grid-item" id="testimonials">
+                <h3 id="h3-testimonials">Testimonials</h3>
+                <div id="testimonies" class="grid">
+                    <div class="testimony grid-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cumque, facilis corporis hic
+                            vel eum accusantium aliquid sunt mollitia id. <br><br>-Denton, 22</p>
+                    </div>
+                    <div class="testimony grid-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cumque, facilis corporis hic
+                            vel eum accusantium aliquid sunt mollitia id. <br><br>-Denton, 22</p>
+                    </div>
+                    <div class="testimony grid-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi cumque, facilis corporis hic
+                            vel eum accusantium aliquid sunt mollitia id. <br><br>-Denton, 22</p>
+                    </div>
+                </div>
+            </section>
+
+        <section id="testimonials">
+            <div id="testimony">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit reprehenderit ullam non
+                    voluptatem corporis quia rem. Sapiente, nisi incidunt.
+                </p>
+                <h4>-Denton</h4>
+            </div>
+            <div id="testimony">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit reprehenderit ullam non
+                    voluptatem corporis quia rem. Sapiente, nisi incidunt.
+                </p>
+                <h4>-Denton</h4>
+            </div>
+            <div id="testimony">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugit reprehenderit ullam non
+                    voluptatem corporis quia rem. Sapiente, nisi incidunt.
+                </p>
+                <h4>-Denton</h4>
+            </div>
+        </section> -->
     </main>
 
-    <footer></footer>
+    <footer>
+        <h6>Created By: @dentonflake</h6>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

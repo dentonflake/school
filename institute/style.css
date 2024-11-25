@@ -1,4 +1,155 @@
-#hero {
-    padding: 300px;
-    background-color: rgba(230, 230, 210, 1);
+#main {
+    width: 100%;
+    max-width: 1000px;
 }
+
+#hero {
+    padding: 100px;
+    background-color: rgba(253, 252, 252);
+
+    grid-template-areas:
+        'title title-image'
+        'sub-title title-image';
+
+    gap: 10%;
+}
+
+#h2-title {
+    grid-area: title;
+    font-size: 80px;
+    font-weight: 800;
+    color: rgba(26, 34, 39, 1);
+}
+
+#img-heroImage {
+    grid-area: title-image;
+    width: 200px;
+    filter: brightness(90%);
+    border-radius: 10px;
+
+    box-shadow: rgba(25, 31, 35, 1) 10px 10px;
+}
+
+#h3-subTitle {
+    grid-area: sub-title;
+}
+
+#description {
+    display: flex;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+#img-andersen {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 2px
+}
+
+#p-description {
+    color: rgba(253, 252, 252);
+    padding: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+#quote-generator {
+    background: rgb(50, 50, 50);
+    color: rgba(253, 252, 252);
+}
+
+#button-generate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #testimonials {
+    box-shadow: none;
+    padding: 0;
+}
+
+#h3-testimonials {
+    color: rgba(253, 252, 252);
+    font-weight: 600;
+}
+
+#testimonies {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 0;
+}
+
+.testimony {
+    background-color: rgba(253, 252, 252);
+    border-radius: 10px;
+    background-color: grey;
+} */
+
+@media only screen and (max-width: 1040px) {
+    #main {
+        max-width: 750px;
+    }
+
+    #hero {
+        padding: 75px;
+    }
+
+    #h2-title {
+        font-size: 60px;
+    }
+
+    #img-heroImage {
+        width: 150px;
+    }
+
+    #h3-subTitle {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    #main {
+        max-width: none;
+    }
+
+    #hero {
+        padding: 25px;
+    }
+
+    #h2-title {
+        font-size: 30px;
+    }
+
+    #img-heroImage {
+        width: 75px;
+    }
+
+    #img-andersen {
+        width: 150px;
+    }
+}
+
+
+
+/*
+
+
+
+#description {
+    border: solid rgba(253, 252, 252, 1);
+    padding: 30px;
+    color: rgba(253, 252, 252, 1);
+}
+
+#testimonials {
+    display: grid;
+    grid-template-columns: repeat(1x, 1fr);
+    gap: 10px
+}
+
+#testimony {
+    padding: 20px;
+    background-color: rgba(253, 252, 252, 1);
+    border-radius: 10px;
+} */
