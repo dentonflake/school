@@ -62,7 +62,7 @@ let quotes = [
 ]
 
 function handleGenerateQuote() {
-    let random = Math.round(Math.random() * x(quotes.length - 1))
+    let random = Math.round(Math.random() * (quotes.length - 1))
 
     document.getElementById('p-quote').innerHTML = quotes[random].quote;
     document.getElementById('p-author').innerHTML = "-" + quotes[random].author;
